@@ -1,0 +1,219 @@
+/* Hoja de estilos */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+    font-family: "Inter", sans-serif;             tipogragia Inter
+    font-family: "Montserrat", sans-serif;        tipografia Montserrat
+*/
+
+/* Variables para los colores */
+:root {
+    /* Esquema de colores */
+    --clr-primary: hsl(208, 100%, 7%);
+    --clr-primary-75: hsl(208, 100%, 7%, 0.75);
+    --clr-secondary: hsl(208, 100%, 75%);
+    --clr-neutral: hsl(208, 100%, 95%);
+    --clr-accent-35: hsl(286, 100%, 35%);
+    --clr-accent-65: hsl(286, 100%, 65%);
+    --clr-accent-85: hsl(286, 100%, 85%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Estilos generales para el body */
+body{
+    background-color: var(--clr-neutral);
+    color: var(--clr-primary);
+    margin: 0;
+}
+
+/* Titulares */
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Estilos del Header */
+header {
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral);
+
+    padding: 2rem;
+
+    text-align: center;
+}
+
+header a {
+    margin: 1rem;
+}
+
+/* Estilos del main */
+main {
+    padding: 2rem 1rem;
+}
+
+/* estilos para las secciones */
+section {
+    width: min(62rem, 100%);
+    background-color: brown;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+
+/* Clase 3 / modelo de caja */
+.box-model {
+    border: 2px solid var(--clr-primary); /*borde del elemento*/
+    padding: 16px;                        /*margen interno*/
+
+    margin: 16px auto;        /* top y bottom/rigth y left*/     /*para centrar (orizontal)*/
+
+    margin-left: auto;   /*margen izquierdo*/
+    margin-right: auto;  /*margen derecho*/
+
+    border-radius: 16px;
+
+    width: 550px;  /*ancho*/
+    /*height: 150px; /*alto*/
+}
+
+
+/* clase 4 */
+/* Estilos para la sección bienvenida */
+#bienvenida {
+    background-image: url('../81261/img/bienvenida.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32rem;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#bienvenida > h1 {
+    background-color: var(--clr-primary-75);
+    color: var(--clr-neutral);
+    padding: 2rem 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* links */
+/* Link / Visited */
+header a:link,
+header a:visited {
+    color: var(--clr-neutral);
+}
+
+/* Hover / Active */
+header a:hover,
+header a:active {
+    background-color: var(--clr-accent-65);
+}
+
+
+/* Clase 5 */
+.contenedor-flex {
+    background-color: var(--clr-secondary);
+    height: 32rem;
+
+    display: flex;   /* activa el display flex en el contenedor */
+
+    flex-direction: column;   /* controla la direcion del eje principal */
+    justify-content: center;   /* controla el eje principal */
+    align-items: center;   /* controla el eje secundario */
+
+    gap: 2rem;
+    padding: 2rem;
+
+    flex-wrap: wrap;   /* deja de ser flexible y se convierte en una grilla */
+}
+
+.item {
+    border: 0.2rem solid var(--clr-primary);
+    width: 5rem;
+    height: 5rem;
+}
+
+
+/* ejercicio 'novedades' */
+.contenedor-novedades {
+    display: flex;
+
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+article {
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0.5rem;
+
+}
+
+article h2,
+article h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+article h3 {
+    font-weight: 400rem;
+}
+
+
+a.btn-outline:link,
+a.btn-outline:visited,
+a.btn-fill:link,
+a.btn-fill:visited {
+    text-decoration: none;
+    text-align: center;
+    border: 0.1rem solid var(--clr-primary);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+a.btn-outline:hover,
+a.btn-outline:active {
+    background-color: var(--clr-primary);
+    color: var(--clr-accent-65);
+}
+
+a.btn-fill:hover,
+a.btn-fill:active {
+    background-color: var(--clr-primary);
+    color: var(--clr-accent-65);
+}
+
+
+.contenedor-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    justify-content: flex-start;
+    align-items: stretch;
+}

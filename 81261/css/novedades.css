@@ -1,0 +1,81 @@
+/* Clase para los links del Main */
+main a:link, 
+main a:visited {
+    color: hsl(286, 100%, 35%);
+    text-decoration: none;
+}
+
+main a:hover,
+main a:active {
+    color: hsl(286, 100%, 65%);
+}
+
+/* Ejercicio novedades */
+.contenedor-novedades {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 1rem;
+
+    padding: 2rem 0;
+}
+
+article {
+    width: 12rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0.5rem;
+}
+
+.contenedor-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+article h2,
+article h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+article h3 {
+    font-weight: 400;
+}
+
+a.btn-outline:link,
+a.btn-outline:visited {
+    font-size: 0.8rem;
+    color: hsl(208, 100%, 8%);
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+a.btn-outline:hover {
+    color: hsl(286, 100%, 65%);
+    background-color: hsl(208, 100%, 8%);
+}
+
+a.btn-fill:link,
+a.btn-fill:visited {
+    font-size: 0.8rem;
+    color: hsl(208, 100%, 94%);
+    background-color: hsl(208, 100%, 8%);
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+a.btn-fill:hover,
+a.btn-fill:active {
+    background-color: hsl(208, 100%, 15%);
+    color: hsl(286, 100%, 65%);
+}

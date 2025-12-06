@@ -28,17 +28,94 @@
         </section>
 
         <section>
-            <h1>Modelo de caja</h1>
-            <div class="box-model">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, non recusandae! Ab saepe repellat eos nostrum rerum corporis veritatis eligendi, laboriosam, molestiae ratione at pariatur quia dolores deleniti a velit.
-                Ad quasi dolorum eveniet veniam praesentium earum consequatur porro sit nulla nostrum deleniti inventore numquam blanditiis sed rerum delectus animi aut, provident, distinctio exercitationem suscipit eaque similique, cumque maxime? Qui.</p>
-            </div>
-        </section>
+            <h1>Formularios</h1>
+            <!-- Formulario Nuevo Usuario -->
+            <form action="" id="registro">
+                <h2>Nuevo usuario</h2>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="¿Cual es tu nombre?">
+                <span>Mensaje de estado</span>
 
-        <section>
-            <h1>Emmet cheat sheet</h1>
-        </section>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="¿Cual es tu apellido?">
+                <span>Mensaje de estado</span>
 
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="email@dominio.com" required>
+                <span>Mensaje de estado</span>
+
+                <label for="pasword">Contraseña</label>
+                <input type="password" placeholder="Elije su contraseña" required pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="La contraseña debe tener al menos 10 caracteres, 1 mayúscula, 1 número y 1 símbolo (!@#$%^&*)">
+                <span>Mensaje de estado</span>
+
+                <!-- Elejir una opcion -->
+                <label>
+                    ¿Te gustaria resivir notificaciones por e-mail?
+                    <input type="radio" name="newsletter" value="newsletterSi" checked> Si
+                    <input type="radio" name="newsletter" value="newsletterNo"> No
+                </label>
+
+                <label>
+                    Acepto los terminos y condiciones <input type="checkbox" required value="acepto">
+                </label>
+
+                <!-- Boton -->
+                <button>Registrarme</button>
+            </form>
+
+            <!-- Formulario Iniciar Sesion -->
+            <form action="">
+                <h2>Iniciar sesion</h2>
+
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="email@dominio.com" required title="Tu E-Mail">
+                <span>Mensaje de estado</span>
+
+                <label for="pasword">Contraseña</label>
+                <input type="password" placeholder="Elije su contraseña" required pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="Tu contraseña">
+                <span>Mensaje de estado</span>
+
+                <div class="contenedor-form">
+                    <a href="clase_7.html#registro">¿Aun no tenes cuenta?</a>
+                    <a href="">Olvide mi usuario</a>
+                    <a href="">Olvide mi contraseña</a>
+                </div>
+
+                <!-- Boton -->
+                <button>Ingresar</button>
+            </form>
+
+            <!-- Enviar un mensaje-->
+            <form action="">
+                <h2>Enviar mensaje</h2>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <span>Mensaje de estado</span>
+
+                <label for="asunto">Asunto</label>
+                <select name="asunto" id="asunto">
+                    <option value="">Mi suscripcion</option>
+                    <option value="">Mi pedido</option>
+                    <option value="">Mis novedades</option>
+                    <option value="">Otra consulta</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" required></textarea>
+                <span>Mensaje de estado</span>
+
+                <label>
+                    ¿Cuales son tus preferencias de lectura? <br>
+                    <input type="checkbox" value="Comics" name="intereses1"> Comics
+                    <input type="checkbox" value="Manga" name="intereses2"> Manga
+                    <input type="checkbox" value="Novela" name="intereses3"> Novelas
+                </label>
+
+                <button>Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
 

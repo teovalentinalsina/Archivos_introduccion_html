@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 7</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>DW</h1>
+    <a href="index.html">Clase 1</a>
+    <a href="clase2.html">Clase 2</a>
+    <a href="clase3.html">Clase 3</a>
+    <a href="clase4.html">Clase 4</a>
+    <a href="clase5.html">Clase 5</a>
+    <a href="clase6.html">Clase 6</a>
+    <a href="clase7.html">Clase 7</a>
+  </header>
+  <main>
+    <section id="bienvenida">
+      <h1>Bienvenidos a la clase 7</h1>
+    </section>
+    <section>
+      <h1>Formularios</h1>
+      <form action="" id="registro">
+        <h2>Nuevo usuario</h2>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="¿Cuál es tu nombre?">
+        <span>Mensaje de estado</span>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="¿Cuál es tu apellido?">
+        <span>Mensaje de estado</span>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="email@dominio.com" required>
+        <span>Mensaje de estado</span>
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Elige tu contraseña" required pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="La contraseña debe tener al menos 10 caracteres, 1 mayúscula, 1 número y 1 símbolo (!@#$%^&*)">
+        <span>Mensaje de estado</span>
+
+        <label>
+          ¿Te gustaría recibir novedades por e-mail? <br>
+          <input type="radio" name="newsletter" value="newsletterSi" checked> Si
+          <input type="radio" name="newsletter" value="newsletterNo"> No
+        </label>
+
+        <button>Registrarme</button>
+      </form>
+
+      <form action="">
+        <h2>Iniciar sesión</h2>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Tu e-mail" title="El email con el que te registraste" required>
+        <div class="estado">
+          <span>Mensaje de estado</span>
+        </div>
+
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="password" name="password" required placeholder="Tu contraseña">
+        <div class="estado">
+          <span>Mensaje de estado</span>
+        </div>
+
+        <button>Ingresar</button>
+
+        <div class="contenedor-form">
+          <a href="#registro">¿Aún no tenés cuenta?</a>
+          <a href="">Olvidé mi usuario</a>
+          <a href="">Olvidé mi contraseña</a>
+        </div>
+      </form>
+
+      <a href="clase2.html#bloque">Ver elementos de bloque Clase 2</a>
+
+      <form action="">
+        <h2>Enviar mensaje</h2>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+        <div class="estado">
+          <span>Mensaje de estado</span>
+        </div>
+
+        <label for="asunto">Asunto</label>
+        <select name="asunto" id="asunto">
+          <option value="suscripcion">Mi suscripción</option>
+          <option value="pedido">Mi pedido</option>
+          <option value="novedades">Mis novedades</option>
+          <option value="otro">Otra consulta</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+        <div class="estado">
+          <span>Mensaje de estado</span>
+        </div>
+
+        <label>
+          ¿Cuáles son tus intereses de lectura? <br>
+          <input type="checkbox" value="comics" name="intereses1"> Comics
+          <input type="checkbox" value="manga" name="intereses2"> Manga
+          <input type="checkbox" value="libros" name="intereses3"> Libros
+        </label>
+
+        <label>
+          Acepto los términos y condiciones <input type="checkbox" required value="acepto">
+        </label>
+
+        <button>Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    
+  </footer>
+</body>
+</html>

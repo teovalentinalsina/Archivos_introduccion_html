@@ -48,10 +48,6 @@ header {
     text-align: center;
 }
 
-header a {
-    margin: 1rem;
-}
-
 /* Estilos del main */
 main {
     padding: 2rem 1rem;
@@ -77,6 +73,7 @@ section {
     width: 550px; /* Ancho */
 }
 
+
 /* Clase 4 */
 
 /* Estilos para la sección bienvenida */
@@ -86,6 +83,11 @@ section {
     background-size: cover;
     height: 32rem;
     padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }
 
 #bienvenida > h1 {
@@ -98,8 +100,13 @@ img {
     width: 100%;
 }
 
+
 /* Links */
 /* Link / Visited */
+header a {
+    margin: 1rem;
+}
+
 header a:link,
 header a:visited {
     color: var(--clr-neutral);
@@ -110,5 +117,135 @@ header a:visited {
 header a:hover,
 header a:active {
     color: var(--clr-accent-65);
+}
+
+/* Clase 5 */
+.contenedor-flex {
+    background-color: var(--clr-secondary);
+
+    display: flex; /* Esto activa el display flex en el contenedor */
+
+    flex-direction: row; /* Controla la dirección del eje principal */
+
+    justify-content: flex-start; /* Controla el eje principal */
+    align-items: stretch; /* Controla el eje secundario */
+
+    gap: 2rem;
+    padding: 2rem;
+
+    flex-wrap: wrap;
+}
+
+.item {
+    border: 0.2rem solid var(--clr-primary);
+    width: 5rem;
+    height: 5rem;
+}
+
+/* Ejercicio novedades */
+
+.contenedor-novedades {
+    display: flex;
+
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+article {
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0.5rem;
+}
+
+article h2,
+article h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+article h3 {
+    font-weight: 400;
+}
+
+.contenedor-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+a.btn-outline:link,
+a.btn-outline:visited,
+a.btn-fill:link,
+a.btn-fill:visited {
+    text-decoration: none;
+    text-align: center;
+    border: 0.1rem solid var(--clr-primary);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+a.btn-outline:hover,
+a.btn-outline:active {
+    background-color: var(--clr-primary);
+    color: var(--clr-accent-65);
+}
+
+a.btn-fill:link,
+a.btn-fill:visited {
+    background-color: var(--clr-primary);
+    color: var(--clr-accent-65);
+}
+
+a.btn-fill:hover,
+a.btn-fill:active {
+    background-color: var(--clr-accent-65);
+    color: var(--clr-primary);
+}
+
+/* Desafíos M1 */
+.estilo-1 {
+    font-weight: 600;
+}
+
+.estilo-2 {
+    font-weight: 600;
+    color: var(--clr-accent-65);
+    background-color: var(--clr-primary);
+    padding: 0.5rem;
+}
+
+/* Clase 7 Formularios */
+
+form {
+    border: 0.1rem solid var(--clr-primary);
+    width: 24rem;
+    margin: 1rem auto 2rem; /* top / left y right / bottom */
+    padding: 2rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Distancia entre elementos en un contenedor con flex */
+}
+
+form h2 {
+    text-align: center;
+}
+
+.estado {
+    display: flex;
+    justify-content: flex-end;
+}
+
+form span {
+    text-align:right;
+    background-color: red;
+    padding: 0.3rem;
 }
 

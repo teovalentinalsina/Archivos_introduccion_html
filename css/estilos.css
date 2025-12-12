@@ -78,7 +78,7 @@ section {
 
 /* Estilos para la sección bienvenida */
 #bienvenida {
-    background-image: url('../img/bienvenida.jpg');
+    background-image: url('../81261/img/bienvenida.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 32rem;
@@ -247,3 +247,82 @@ form span {
     text-align:right;
 }
 
+/* Clase 8 */
+input,
+select,
+textarea,
+button {
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid var(--clr-primary);
+    border-radius: 0.5rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    /*outline: 0.1rem solid var(--clr-accent-65);
+    outline-offset: -0.1rem;*/
+    outline: none;
+    border: 0.1rem solid var(--clr-accent-65);
+}
+
+textarea {
+    min-height: 12rem;
+}
+
+button {
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral);
+}
+
+button:hover {
+    background-color: var(--clr-accent-65);
+    color: var(--clr-primary);
+    cursor: pointer;
+}
+
+/* Tablas */
+table {
+    border: 0.1rem solid var(--clr-primary);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+/*      tr, table row (fila de la tabla)
+        th, table header (encabezado de las columnas)
+        td, table data (celdas comunes)
+*/
+th {
+    padding: 1rem;
+}
+
+th,
+td {
+    border: 0.1rem solid var(--clr-primary);
+}
+
+/*first-of-type (primero en su tipo)*/
+table tr:first-of-type {
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral);
+}
+
+tr:hover {
+    background-color: var(--clr-secondary);
+}
+
+/* iFrame Mapa */
+.mapa {
+    width: 100%;
+    height: 32rem;
+    /*border: none;*/
+}
+
+video {
+    width: 100%;
+}

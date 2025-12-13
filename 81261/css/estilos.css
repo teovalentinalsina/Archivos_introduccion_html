@@ -100,7 +100,6 @@ img {
     width: 100%;
 }
 
-
 /* Links */
 /* Link / Visited */
 header a {
@@ -117,6 +116,71 @@ header a:visited {
 header a:hover,
 header a:active {
     color: var(--clr-accent-65);
+}
+
+/* Clase para los links del Main */
+main a:link, 
+main a:visited {
+    color: hsl(286, 100%, 35%);
+    text-decoration: none;
+}
+
+main a:hover,
+main a:active {
+    color: hsl(286, 100%, 65%);
+}
+
+/* Estilos para el Footer del documento */
+footer {
+    background-color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 94%);
+    padding: 2rem;
+}
+
+footer h1 {
+    font-size: 1rem;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    width: min(62rem, 100%);
+    margin: 0 auto;
+}
+
+.sobre-nosotros {
+    display: flex;
+    gap: 1rem;
+}
+
+.contacto img {
+    width: 2rem;
+}
+
+/* Clase para los links del Footer */
+a.footer:link,
+a.footer:visited {
+    text-decoration: none;
+    color: hsl(286, 100%, 65%);
+}
+
+a.footer:hover,
+a.footer:active {
+    color: hsl(286, 100%, 85%);
 }
 
 /* Clase 5 */
@@ -238,14 +302,178 @@ form h2 {
     text-align: center;
 }
 
-.estado {
+/* .estado {
     display: flex;
     justify-content: flex-end;
 }
+*/
 
 form span {
     text-align:right;
-    background-color: red;
-    padding: 0.3rem;
+} 
+
+/* Clase 8 */
+input,
+select,
+textarea,
+button {
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid var(--clr-primary);
+    border-radius: 0.5rem;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+    /*outline: 0.1rem solid var(--clr-accent-65);
+    outline-offset: -0.1rem; */
+    outline: none;
+    border: 0.1rem solid var(--clr-accent-65);
+}
+
+textarea {
+    min-height: 12rem;
+}
+
+button {
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral);
+}
+
+button:hover {
+    background-color: var(--clr-accent-65);
+    color: var(--clr-primary);
+    cursor: pointer;
+}
+
+/* Tablas */
+
+table {
+    border: 0.1rem solid var(--clr-primary);
+    width: 100%; /* Toma el 100% del ancho de la sección*/
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table img {
+    width: 7rem;
+}
+
+caption {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+/*  tr, table row (fila de la tabla)
+    th, table header (encabezado de las columnas)
+    td, table data (celdas comunes)    
+*/
+th {
+    padding: 1rem;
+}
+
+th, 
+td {
+    border: 0.1rem solid var(--clr-primary);
+}
+
+/* first-of-type (primer elemento de su tipo) */
+table tr:first-of-type {
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral);
+}
+
+tr:hover {
+    background-color: var(--clr-secondary);
+}
+
+/* iframe Mapa */
+.mapa {
+    width: 100%;
+    height: 32rem;
+    border: none;
+}
+
+video {
+    width: 100%;
+}
+
+/* Clase 9 */
+/* Ejercicio producto */
+.contenedor-producto * {
+    font-family: "Montserrat", sans-serif;
+}
+
+.contenedor-producto {
+    display: flex;
+    gap: 1rem;
+    background-color: hsl(231, 13%, 11%);
+    color: hsl(55, 55%, 91%);
+    padding: 8rem 2rem;
+}
+
+.producto-izq {
+    width: 24rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.producto-izq img {
+    width: auto;
+}
+
+.producto-der {
+    width: 40rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.producto-der ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    gap: 0.5rem;
+}
+
+.producto-der h1 {
+    text-align: left;
+}
+
+.producto-der p {
+    line-height: 1.6;
+}
+
+a.prod-categorias:link,
+a.prod-categorias:visited {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: hsl(231, 100%, 85%);
+    color: hsl(231, 13%, 11%);
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+a.prod-categorias:hover,
+a.prod-categorias:active {
+    background-color: var(--clr-accent-65);
+}
+
+a.btn-comprar:link,
+a.btn-comprar:visited {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: hsl(231, 100%, 85%);
+    color: hsl(231, 13%, 11%);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+a.btn-comprar:hover,
+a.btn-comprar:active {
+    background-color: var(--clr-accent-65);
+}
